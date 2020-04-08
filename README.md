@@ -31,4 +31,33 @@ npx jasmine
 
 ## Problems
 
-0. Testing Testing With Me
+### 0. Testing Testing With Me
+
+This is just setup to test the testing frameworks of each language.
+
+
+### 1. Implement a stack
+
+Implement a stack (LIFO - last in first out) that can be configured
+with a capacity (max number of elements).
+
+API
+```
+// Is the stack empty or not?
+empty() : bool
+
+// Is the stack full (i.e at capacity) or not?
+capacity() : bool
+
+// Peek at the top value (return NULL if empty)
+peek() : object | null
+
+// Add a new record to the top of the stack,
+// return true if you successfully add the record
+// false otherwise
+push(record) : bool
+
+// Pop the last record off the stack
+// (return NULL if empty)
+pop() : object | null
+```
