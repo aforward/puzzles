@@ -61,3 +61,35 @@ push(record) : bool
 // (return NULL if empty)
 pop() : object | null
 ```
+
+### 2. Return the string between parens
+
+Given a string and which paran to match (1-based)
+return the string between those parens.
+
+Here are a few use cases
+
+API
+```
+match(str, whichParen) : str | null
+```
+
+Test cases
+
+```
+// no parens
+matchparens.match("abcdef", 1) => NULL
+matchparens.match("ab(cde)f", 2) => NULL
+
+// not balanced
+matchparens.match("ab(cdef", 1) => NULL
+matchparens.match("ab(c(de)f", 1)
+
+// simple match
+matchparens.match("Hello (my name) is?", 1) => "my name"
+
+// nested match
+matchparens.match("Hello (my name (is Thomas) what is) yours?", 1) => "my name (is Thomas) what is"
+matchparens.match("Hello (my name (is Thomas) what is) yours?", 2) => "is Thomas"
+matchparens.match("ab(c(de)f", 2) => "de"
+```
