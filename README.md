@@ -98,3 +98,7 @@ matchparens.match("ab(c(de)f", 2) => "de"
 
 Given a list of words L and a word W, return a list of words from
 L that are anagrams of W.
+
+### 4. Shuffle a Deck of Cards
+
+Write a module to create and shuffle a deck of cards.
