@@ -93,3 +93,8 @@ matchparens.match("Hello (my name (is Thomas) what is) yours?", 1) => "my name (
 matchparens.match("Hello (my name (is Thomas) what is) yours?", 2) => "is Thomas"
 matchparens.match("ab(c(de)f", 2) => "de"
 ```
+
+### 3. Anagrams
+
+Given a list of words L and a word W, return a list of words from
+L that are anagrams of W.
