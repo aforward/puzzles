@@ -28,6 +28,22 @@ You can run all tests with
 npx jasmine
 ```
 
+### Python
+
+It should be available out of the box, but probably the wrong version.
+
+```
+brew install python
+```
+
+You want version 3+ (not 2.7, unless you need 2.7)
+
+But you will also need [py.test](https://docs.pytest.org/en/latest/getting-started.html)
+
+```
+pip3 install -U pytest
+```
+
 
 ## Problems
 
